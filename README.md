@@ -1,7 +1,7 @@
 # Laravel-Themevel
-[![Latest Stable Version](https://poser.pugx.org/shipu/themevel/v/stable)](https://packagist.org/packages/shipu/themevel)
-[![Latest Unstable Version](https://poser.pugx.org/shipu/themevel/v/unstable)](https://packagist.org/packages/shipu/themevel)
-[![License](https://poser.pugx.org/shipu/themevel/license)](https://packagist.org/packages/shipu/themevel)
+[![Latest Stable Version](https://poser.pugx.org/vsmartcode/themevel/v/stable)](https://packagist.org/packages/vsmartcode/themevel)
+[![Latest Unstable Version](https://poser.pugx.org/vsmartcode/themevel/v/unstable)](https://packagist.org/packages/vsmartcode/themevel)
+[![License](https://poser.pugx.org/vsmartcode/themevel/license)](https://packagist.org/packages/vsmartcode/themevel)
 
 Themevel is a Laravel 5 theme and asset management package. You can easily integrate this package with any Laravel based project.
 
@@ -21,7 +21,7 @@ Themevel is a Laravel 5 theme and asset management package. You can easily integ
 Themevel is a Laravel package so you can install it via Composer. Run this command in your terminal from your project directory:
 
 ```sh
-composer require shipu/themevel
+composer require vsmartcode/themevel
 ```
 
 Wait for a while, Composer will automatically install Themevel in your project.
@@ -31,19 +31,19 @@ Wait for a while, Composer will automatically install Themevel in your project.
 Below **Laravel 5.5** you have to call this package service in `config/app.php` config file. To do that, add this line in `app.php` in `providers` array:
 
 ```php
-Shipu\Themevel\Providers\ThemevelServiceProvider::class,
+vsmartcode\Themevel\Providers\ThemevelServiceProvider::class,
 ```
 
 Below **Laravel 5.5** version to use facade you have to add this line in `app.php` to the `aliases` array:
 
 ```php
-'Theme' => Shipu\Themevel\Facades\Theme::class,
+'Theme' => vsmartcode\Themevel\Facades\Theme::class,
 ```
 
 Now run this command in your terminal to publish this package resources:
 
 ```
-php artisan vendor:publish --provider="Shipu\Themevel\Providers\ThemevelServiceProvider"
+php artisan vendor:publish --provider="vsmartcode\Themevel\Providers\ThemevelServiceProvider"
 ```
 
 ## Artisan Command
@@ -83,8 +83,8 @@ php artisan theme:list
 +----------+--------------+---------+----------+
 | Name     | Author       | Version | Parent   |
 +----------+--------------+---------+----------+
-| themeone | Shipu Ahamed | 1.1.0   |          |
-| themetwo | Shipu Ahamed | 1.0.0   | themeone |
+| themeone | vsmartcode Ahamed | 1.1.0   |          |
+| themetwo | vsmartcode Ahamed | 1.0.0   | themeone |
 +----------+--------------+---------+----------+
 ```
 
@@ -137,14 +137,14 @@ Then run `theme:create` command which describe above.
 Now Please see the API List Doc.
 
 ## API List
-- [set](https://github.com/shipu/themevel#set)
-- [get](https://github.com/shipu/themevel#get)
-- [current](https://github.com/shipu/themevel#current)
-- [all](https://github.com/shipu/themevel#all)
-- [has](https://github.com/shipu/themevel#has)
-- [getThemeInfo](https://github.com/shipu/themevel#getThemeInfo)
-- [assets](https://github.com/shipu/themevel#assets)
-- [lang](https://github.com/shipu/themevel#lang)
+- [set](https://github.com/vsmartcode/themevel#set)
+- [get](https://github.com/vsmartcode/themevel#get)
+- [current](https://github.com/vsmartcode/themevel#current)
+- [all](https://github.com/vsmartcode/themevel#all)
+- [has](https://github.com/vsmartcode/themevel#has)
+- [getThemeInfo](https://github.com/vsmartcode/themevel#getThemeInfo)
+- [assets](https://github.com/vsmartcode/themevel#assets)
+- [lang](https://github.com/vsmartcode/themevel#lang)
 
 ### set
 
@@ -287,7 +287,7 @@ First register it in app\Http\Kernel.php:
 ```php
 protected $routeMiddleware = [
     // ...
-    'theme' => \Shipu\Themevel\Middleware\RouteMiddleware::class,
+    'theme' => \vsmartcode\Themevel\Middleware\RouteMiddleware::class,
 ];
 ```
 Now you can apply the middleware to a route or route-group. Eg:
@@ -307,7 +307,7 @@ First register it in app\Http\Kernel.php:
 protected $middlewareGroups = [
     'web' => [
         // ...
-        \Shipu\Themevel\Middleware\WebMiddleware::class,
+        \vsmartcode\Themevel\Middleware\WebMiddleware::class,
     ],
     // ...
 ];
@@ -318,7 +318,7 @@ Theme set from `config/theme.php` .
 You can also inject theme instance using ThemeContract, eg:
 
 ``` php
-use Shipu\Themevel\Contracts\ThemeContract;
+use vsmartcode\Themevel\Contracts\ThemeContract;
 
 private $theme;
 
@@ -330,10 +330,10 @@ public function __construct(ThemeContract $theme)
 
 ## Credits
 
-- [Shipu Ahamed](https://github.com/shipu)
+- [vsmartcode Ahamed](https://github.com/vsmartcode)
 - [All Contributors](../../contributors)
 
 ## Support for this project
 Hey dude! Help me out for a couple of :beers:!
 
-[![Beerpay](https://beerpay.io/Shipu/themevel/badge.svg?style=beer)](https://beerpay.io/Shipu/themevel) [![Beerpay](https://beerpay.io/Shipu/themevel/make-wish.svg?style=flat-square)](https://beerpay.io/Shipu/themevel?focus=wish) 
+[![Beerpay](https://beerpay.io/vsmartcode/themevel/badge.svg?style=beer)](https://beerpay.io/vsmartcode/themevel) [![Beerpay](https://beerpay.io/vsmartcode/themevel/make-wish.svg?style=flat-square)](https://beerpay.io/vsmartcode/themevel?focus=wish) 
