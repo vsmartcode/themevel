@@ -38,7 +38,6 @@
             }
         }
     },
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "suggest": {
         "symfony/yaml": "Allows for parsing of YAML theme info and change log files"
