@@ -1,7 +1,4 @@
 # Laravel-Themevel
-[![Latest Stable Version](https://poser.pugx.org/vsmartcode/themevel/v/stable)](https://packagist.org/packages/vsmartcode/themevel)
-[![Latest Unstable Version](https://poser.pugx.org/vsmartcode/themevel/v/unstable)](https://packagist.org/packages/vsmartcode/themevel)
-[![License](https://poser.pugx.org/vsmartcode/themevel/license)](https://packagist.org/packages/vsmartcode/themevel)
 
 Themevel is a Laravel 5 theme and asset management package. You can easily integrate this package with any Laravel based project.
 

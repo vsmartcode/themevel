@@ -1,8 +1,8 @@
 {
-    "name": "shipu/themevel",
+    "name": "vsmartcode/themevel",
     "description": "Theme and asset management for laravel 5",
     "keywords": ["theme", "child-theme", "multi", "themevel", "asset", "management", "laravel", "lumen"],
-    "homepage": "https://github.com/shipu/themevel",
+    "homepage": "https://github.com/vsmartcode/themevel",
     "license": "CC(3.0)",
     "authors": [
         {
